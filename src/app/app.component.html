@@ -1,0 +1,37 @@
+<div class="bnp-container">
+  <!-- Header Section -->
+  <header class="bnp-header">
+    <div class="header-content">
+      <div class="header-left">
+        <img class="logo" src="assets/logo.png" alt="BNP Paribas Logo" />
+        <span class="tagline">The bank for a changing world</span>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#group">The Group</a></li>
+          <li><a href="#commitments">Our Commitments</a></li>
+          <li><a href="#news">News & Media Room</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#you-are">You are</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <button class="search-icon" (click)="toggleSearch()">🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Bar Container -->
+  <div class="search-bar-container" [class.open]="searchOpen">
+    <input type="text" class="search-input" placeholder="Search..." />
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Third Quarter 2024 Result</h1>
+      <p>Strong operating performance and 2024 trajectory confirmed.</p>
+      <button class="hero-btn">Read the Press Release</button>
+    </div>
+  </section>
+</div>
