@@ -84,7 +84,7 @@
   /* Search Bar Styles */
   .search-bar-container {
     position: absolute;
-    top: 80px; /* Adjust below static header height */
+    top: 93px; /* Adjust below static header height */
     left: 0;
     width: 100%;
     background: white;
@@ -97,11 +97,12 @@
   }
   
   .search-bar-container.open {
-    height: 60px; /* Smoothly expand height when open */
+    height: 45px; /* Smoothly expand height when open */
     opacity: 1;
   }
   
   .search-input {
+    height: 45px;
     width: 100%;
     padding: 10px;
     border: none;
