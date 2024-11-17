@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    background-color: rgba(248, 235, 235, 0.8); /* White background with transparency */
     height: 80px; /* Static height */
     padding: 0 20px;
     z-index: 10;
@@ -142,10 +142,10 @@
     background: url('hero-bg.jpg') no-repeat center center/cover; /* Correct image path */
     height: 400px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     color: white;
-    text-align: center;
+    text-align: top;
     padding: 20px;
     position: relative;
   }

@@ -1,55 +1,53 @@
-<div class="bnp-container">
-  <!-- Header Container -->
-  <header class="bnp-header">
-    <div class="header-content">
-      <!-- Left Section: Logo and Tagline -->
-      <div class="header-left">
-        <img class="logo" src="logo.png" alt="BNP Paribas Logo" />
-        <!-- Tagline only for large screens -->
-        <span class="tagline" *ngIf="!isSmallScreen">The bank for a changing world</span>
-      </div>
+<section class="hero">
+  <div class="hero-content">
+    <div class="bnp-container">
+      <!-- Header Container -->
+      <header class="bnp-header">
+        <div class="header-content">
+          <!-- Left Section: Logo and Tagline -->
+          <div class="header-left">
+            <img class="logo" src="logo.png" alt="BNP Paribas Logo" />
+            <!-- Tagline only for large screens -->
+            <span class="tagline" *ngIf="!isSmallScreen">The bank for a changing world</span>
+          </div>
 
-      <!-- Navigation Links -->
-      <nav class="header-nav" *ngIf="!isSmallScreen">
-        <ul>
-          <li><a href="#group">The Group</a></li>
-          <li><a href="#commitments">Our Commitments</a></li>
-          <li><a href="#news">News & Media Room</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#you-are">You are</a></li>
-        </ul>
-      </nav>
+          <!-- Navigation Links -->
+          <nav class="header-nav" *ngIf="!isSmallScreen">
+            <ul>
+              <li><a href="#group">The Group</a></li>
+              <li><a href="#commitments">Our Commitments</a></li>
+              <li><a href="#news">News & Media Room</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#you-are">You are</a></li>
+            </ul>
+          </nav>
 
-      <!-- Right Section: Search Icon and Drawer Button -->
-      <div class="header-right">
-        <button class="search-icon" (click)="toggleSearch()">
-          {{ searchOpen ? '✖' : '🔍' }}
-        </button>
-        <!-- Drawer Button for Small Screens -->
-        <button
-          class="drawer-btn"
-          *ngIf="isSmallScreen"
-          (click)="toggleDrawer()"
-        >
-          ☰
-        </button>
-      </div>
-    </div>
-  </header>
-</div>
-
+          <!-- Right Section: Search Icon and Drawer Button -->
+          <div class="header-right">
+            <button class="search-icon" (click)="toggleSearch()">
+              {{ searchOpen ? '✖' : '🔍' }}
+            </button>
+            <!-- Drawer Button for Small Screens -->
+            <button
+              class="drawer-btn"
+              *ngIf="isSmallScreen"
+              (click)="toggleDrawer()"
+            >
+              ☰
+            </button>
+          </div>
 <!-- Search Bar Container -->
-<div
-  class="search-bar-container"
-  [class.open]="searchOpen"
->
+<div class="search-bar-container" [class.open]="searchOpen">
   <input type="text" class="search-input" placeholder="Search..." />
 </div>
 
-<!-- Drawer Menu -->
+        </div>
+      </header>
+    </div>
+    <!-- Drawer Menu -->
 <div class="drawer-menu" *ngIf="drawerOpen">
   <ul>
-    <li><a href="#group">The Groups</a></li>
+    <li><a href="#group">The Group</a></li>
     <li><a href="#commitments">Our Commitments</a></li>
     <li><a href="#news">News & Media Room</a></li>
     <li><a href="#careers">Careers</a></li>
@@ -57,11 +55,13 @@
   </ul>
 </div>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
+
+    <!-- Hero Content -->
     <h1>Third Quarter 2024 Results</h1>
     <p>Strong operating performance and 2024 trajectory confirmed.</p>
     <button class="hero-btn">Read the Press Release</button>
   </div>
 </section>
+
+
+
